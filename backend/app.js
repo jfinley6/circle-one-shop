@@ -1,4 +1,11 @@
 const express = require("express");
 const app = express();
 
-module.exports = app;
+app.use(express.json())
+
+// Import all routes
+const products = require('./routes/products')
+
+app.use('/api/v1', products)
+
+module.exports = app
