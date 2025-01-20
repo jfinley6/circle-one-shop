@@ -4,8 +4,8 @@ const app = express();
 app.use(express.json())
 
 // Import all routes
-const products = require('./routes/products')
+const discs = require('./routes/discs')
 
-app.use('/api/v1', products)
+app.use('/api/v1', discs)
 
 module.exports = app
