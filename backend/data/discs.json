@@ -1,0 +1,153 @@
+[
+    {
+      "name": "Destroyer",
+      "brand": "Innova",
+      "mold": "Distance Driver",
+      "weight": 175,
+      "condition": "New",
+      "color": "Orange",
+      "speed": 12,
+      "glide": 5,
+      "turn": -1,
+      "fade": 3,
+      "price": 17.99,
+      "description": "A popular choice for long-distance drives, offering great speed and control.",
+      "images": [
+        {
+          "public_id": "destroyer-1",
+          "url": "https://example.com/images/destroyer-orange.jpg"
+        }
+      ],
+      "seller": "Pro Disc Golf Store",
+      "stock": 50,
+      "reviews": [
+        {
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "Fantastic disc for distance and reliable fades."
+        }
+      ],
+      "numofReviews": 1
+    },
+    {
+      "name": "Buzzz",
+      "brand": "Discraft",
+      "mold": "Midrange",
+      "weight": 173,
+      "condition": "New",
+      "color": "Yellow",
+      "speed": 5,
+      "glide": 4,
+      "turn": -1,
+      "fade": 1,
+      "price": 14.99,
+      "description": "A straight-flying midrange disc, perfect for controlled throws.",
+      "images": [
+        {
+          "public_id": "buzzz-1",
+          "url": "https://example.com/images/buzzz-yellow.jpg"
+        }
+      ],
+      "seller": "Midwest Discs",
+      "stock": 30,
+      "reviews": [
+        {
+          "name": "Jane Smith",
+          "rating": 4,
+          "comment": "Consistent flight, but a bit hard to grip in wet conditions."
+        }
+      ],
+      "numofReviews": 1
+    },
+    {
+      "name": "Aviar",
+      "brand": "Innova",
+      "mold": "Putter",
+      "weight": 172,
+      "condition": "New",
+      "color": "White",
+      "speed": 2,
+      "glide": 3,
+      "turn": 0,
+      "fade": 1,
+      "price": 11.99,
+      "description": "A reliable putter for both beginners and professionals.",
+      "images": [
+        {
+          "public_id": "aviar-1",
+          "url": "https://example.com/images/aviar-white.jpg"
+        }
+      ],
+      "seller": "Disc Central",
+      "stock": 75,
+      "reviews": [
+        {
+          "name": "Michael Johnson",
+          "rating": 5,
+          "comment": "The best putter on the market. Perfect grip and flight path."
+        }
+      ],
+      "numofReviews": 1
+    },
+    {
+      "name": "Zeus",
+      "brand": "Discraft",
+      "mold": "Distance Driver",
+      "weight": 174,
+      "condition": "New",
+      "color": "Blue",
+      "speed": 12,
+      "glide": 5,
+      "turn": -1,
+      "fade": 3,
+      "price": 19.99,
+      "description": "Paul McBeth's signature disc, offering unmatched control and distance.",
+      "images": [
+        {
+          "public_id": "zeus-1",
+          "url": "https://example.com/images/zeus-blue.jpg"
+        }
+      ],
+      "seller": "Pro Disc Golf Store",
+      "stock": 20,
+      "reviews": [
+        {
+          "name": "Sarah Wilson",
+          "rating": 4,
+          "comment": "Great driver, but requires some experience to control."
+        }
+      ],
+      "numofReviews": 1
+    },
+    {
+      "name": "Mako3",
+      "brand": "Innova",
+      "mold": "Midrange",
+      "weight": 176,
+      "condition": "New",
+      "color": "Green",
+      "speed": 5,
+      "glide": 5,
+      "turn": 0,
+      "fade": 0,
+      "price": 16.49,
+      "description": "A perfectly straight-flying disc, ideal for accurate throws.",
+      "images": [
+        {
+          "public_id": "mako3-1",
+          "url": "https://example.com/images/mako3-green.jpg"
+        }
+      ],
+      "seller": "Disc Central",
+      "stock": 40,
+      "reviews": [
+        {
+          "name": "Tom Lee",
+          "rating": 5,
+          "comment": "The best disc for dead-straight shots. A must-have for any bag."
+        }
+      ],
+      "numofReviews": 1
+    }
+  ]
+  
