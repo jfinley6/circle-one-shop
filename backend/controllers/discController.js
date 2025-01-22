@@ -20,9 +20,20 @@ exports.newDisc = async (req, res, next) => {
     }
   };
 
-exports.getDiscs = (req, res, next) => {
-    res.status(200).json({
-        success: true,
-        message: 'This route will show all discs in database.'
-    })
-}
+// Get all discs  =>  /api/v1/discs
+exports.getDiscs = async (req, res, next) => {
+  try {
+      const discs = await Disc.find();
+      res.status(200).json({
+          success: true,
+          count: discs.length,
+          discs,
+      });
+  } catch (error) {
+      res.status(500).json({
+          success: false,
+          message: "Failed to retrieve discs",
+      });
+  }
+};
+

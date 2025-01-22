@@ -67,4 +67,64 @@ describe("Disc Controller", () => {
         });
     });
 
+    describe("getDiscs", () => {
+        it("should retrieve all discs and return them", async () => {
+            // Mock data to be returned by Disc.find()
+            const mockDiscs = [
+                {
+                    _id: "1",
+                    name: "Destroyer",
+                    brand: "Innova",
+                    weight: 175,
+                    price: 17.99,
+                },
+                {
+                    _id: "2",
+                    name: "Buzzz",
+                    brand: "Discraft",
+                    weight: 177,
+                    price: 14.99,
+                },
+            ];
+
+            // Mock the Disc.find() method
+            Disc.find = jest.fn().mockResolvedValue(mockDiscs);
+
+            const req = {}; // No request body needed for this test
+            const res = {
+                status: jest.fn().mockReturnThis(),
+                json: jest.fn(),
+            };
+
+            await discController.getDiscs(req, res);
+
+            expect(Disc.find).toHaveBeenCalledTimes(1); // Ensure Disc.find() is called
+            expect(res.status).toHaveBeenCalledWith(200); // Check correct status code
+            expect(res.json).toHaveBeenCalledWith({
+                success: true,
+                count: mockDiscs.length,
+                discs: mockDiscs,
+            }); // Check response structure
+        });
+
+        it("should handle errors if Disc.find() fails", async () => {
+            // Mock Disc.find() to throw an error
+            Disc.find = jest.fn().mockRejectedValue(new Error("Database error"));
+
+            const req = {};
+            const res = {
+                status: jest.fn().mockReturnThis(),
+                json: jest.fn(),
+            };
+
+            await discController.getDiscs(req, res);
+
+            expect(res.status).toHaveBeenCalledWith(500); // Ensure it responds with an error code
+            expect(res.json).toHaveBeenCalledWith({
+                success: false,
+                message: "Failed to retrieve discs",
+            });
+        });
+    });
+
 });
